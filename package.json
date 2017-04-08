@@ -1,0 +1,19 @@
+{
+  "name": "debaty",
+  "version": "1.0.0",
+  "description": "DebateMe",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SHAHRUKH-KHAN/debaty.git"
+  },
+  "author": "Shahrukh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SHAHRUKH-KHAN/debaty/issues"
+  },
+  "homepage": "https://github.com/SHAHRUKH-KHAN/debaty#readme"
+}
