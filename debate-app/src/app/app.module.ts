@@ -10,6 +10,7 @@ import { ServerComponent } from './server/server.component';
 import { ServersComponent } from './servers/servers.component';
 import { RedAlertComponent } from './assingment1/app.component.redAlert';
 import { GreenAlertComponent } from './assingment1/app.component.greenAlert';
+import { Assignment2Component } from './assignment2/assignment2.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { GreenAlertComponent } from './assingment1/app.component.greenAlert';
     ServerComponent,
     ServersComponent,
     RedAlertComponent,
-    GreenAlertComponent
+    GreenAlertComponent,
+    Assignment2Component
   ],
   imports: [
     BrowserModule,

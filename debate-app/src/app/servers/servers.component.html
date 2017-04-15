@@ -1,6 +1,28 @@
-<app-server></app-server>
-<app-server></app-server>
+<div class="container">
+    <app-server></app-server>
+    <app-server></app-server>
 
-<h1>Assignment One</h1>
-<red-alert></red-alert>
-<green-alert></green-alert>
+    <hr>
+    <h1>Assignment One</h1>
+    <red-alert></red-alert>
+    <green-alert></green-alert>
+    <hr>
+
+    <h3>String Binding</h3>
+    <p>{{'server'}} name is {{serverName}}. It is {{serverStatus}}</p>
+
+    <p>Want to enable it ?</p>
+    <button class="btn btn-primary" [disabled]="disableButton" (click)="createNewServer()">Enable</button>
+    <p>{{serverCreated}}</p>
+
+    <label>My Name</label>
+    <input class="form-control" [(ngModel)]="serverNewName">
+    {{serverNewName}}
+
+    <hr>
+    <h1>Assignment Two</h1>
+    <app-assignment2></app-assignment2>
+
+</div>
+
+

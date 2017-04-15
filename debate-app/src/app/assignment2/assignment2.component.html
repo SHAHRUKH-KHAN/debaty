@@ -1,0 +1,6 @@
+<div class="col-lg-1">
+  <label>Enter a string</label>
+  <input class="form-control" [(ngModel)]="name" (input)="valueCheck($event)">
+  <p>{{name}}</p>
+  <button class="btn btn-primary" (click)="reset()" [disabled]="disableReset">Reset</button>
+</div>
