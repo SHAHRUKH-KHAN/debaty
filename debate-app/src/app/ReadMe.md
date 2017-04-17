@@ -18,3 +18,9 @@ Component styling -- we are using http://valor-software.com/ngx-bootstrap
   
   ngStyle --> adding styles to your DOM
               check it here - [https://angular.io/docs/ts/latest/api/common/index/NgStyle-directive.html]
+            
+  ngClass --> adding classes to your DOM
+              check it here -
+              [https://angular.io/docs/ts/latest/api/common/index/NgClass-directive.html]
+  
+  ngFor

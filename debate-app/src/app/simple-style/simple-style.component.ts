@@ -7,13 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SimpleStyleComponent implements OnInit {
   status: String = '';
-  constructor() { }
+  constructor() { 
+    this.status = Math.random() > 0.5  ? 'Online' : 'Offline';
+  }
 
   ngOnInit() {
   }
 
-  getStatusColor() {
-    this.status = Math.random() > 0.5  ? 'Online' : 'Offline';
+  getStatus():String {
+    return this.status;
+  }
+
+  getStatusColor():String {
     return this.status === 'Online' ? 'green' : 'red';
   }
 
