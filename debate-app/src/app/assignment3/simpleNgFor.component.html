@@ -1,0 +1,8 @@
+<div>
+    <p class="text-info">Click button to add list</p>
+    <br>
+    <button class="btn btn-sm" (click)="addItems()">Add</button>
+    <div class="row" *ngFor="let item of items" >
+        <p>{{item}}</p>
+    </div>
+</div>
