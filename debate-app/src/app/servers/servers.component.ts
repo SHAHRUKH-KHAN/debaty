@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./servers.component.css']
 })
 export class ServersComponent implements OnInit {
-  disableButton: boolean = true;
+  disableButton: Boolean = true;
   serverCreated: string = 'Server is not created';
   serverName: string = 'shahrukh';
   serverStatus: string = 'Offline';

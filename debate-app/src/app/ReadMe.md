@@ -8,4 +8,13 @@
   >selectors - id does not work in angular.
 })
 
-Component styling -- we are using http://valor-software.com/ngx-bootstrap/#/alerts
+Component styling -- we are using http://valor-software.com/ngx-bootstrap
+
+#Angular directives
+  *ngIf --> condition check; Structural Directive (other is attribute directive)
+            asterisk(*) is there to tell Angular that it will change the structure of the
+            DOM.
+            check it here - [https://angular.io/docs/ts/latest/api/common/index/NgIf-directive.html]
+  
+  ngStyle --> adding styles to your DOM
+              check it here - [https://angular.io/docs/ts/latest/api/common/index/NgStyle-directive.html]

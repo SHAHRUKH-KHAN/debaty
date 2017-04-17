@@ -1,0 +1,10 @@
+<div class="row">
+  <div class="col-lg-3">
+    <h1>About NgIf</h1>
+      <button class="btn btn-primary" (click)="display()">Display</button>
+      <p *ngIf="showMessage; else hideMessage">NgIf turns out to be True</p>
+      <ng-template #hideMessage>
+        <p>NgIf turns out to be is in Else Part</p>
+      </ng-template>
+  </div>
+</div>

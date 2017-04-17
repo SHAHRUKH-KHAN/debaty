@@ -11,6 +11,8 @@ import { ServersComponent } from './servers/servers.component';
 import { RedAlertComponent } from './assingment1/app.component.redAlert';
 import { GreenAlertComponent } from './assingment1/app.component.greenAlert';
 import { Assignment2Component } from './assignment2/assignment2.component';
+import { SimpleIfComponent } from './simple-if/simple-if.component';
+import { SimpleStyleComponent } from './simple-style/simple-style.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { Assignment2Component } from './assignment2/assignment2.component';
     ServersComponent,
     RedAlertComponent,
     GreenAlertComponent,
-    Assignment2Component
+    Assignment2Component,
+    SimpleIfComponent,
+    SimpleStyleComponent
   ],
   imports: [
     BrowserModule,
