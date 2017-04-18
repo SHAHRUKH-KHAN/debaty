@@ -14,6 +14,7 @@ import { Assignment2Component } from './assignment2/assignment2.component';
 import { SimpleIfComponent } from './simple-if/simple-if.component';
 import { SimpleStyleComponent } from './simple-style/simple-style.component';
 import { SimpleNgFor } from './assignment3/simpleNgFor.component';
+import { Assignment4Component } from './assignment4/assignment4.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { SimpleNgFor } from './assignment3/simpleNgFor.component';
     Assignment2Component,
     SimpleIfComponent,
     SimpleStyleComponent,
-    SimpleNgFor
+    SimpleNgFor,
+    Assignment4Component
   ],
   imports: [
     BrowserModule,
