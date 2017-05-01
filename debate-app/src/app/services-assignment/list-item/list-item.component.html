@@ -1,0 +1,9 @@
+<ul class="list-group">
+  <li *ngFor="let item of newItems; index as i" class="list-group-item">
+    <div>
+      <p>{{item.name}}</p>
+      <p>{{item.email}}</p>
+    </div>
+    <button class="btn btn-link" (click)="remove(i)">Delete</button>
+  </li>
+</ul>

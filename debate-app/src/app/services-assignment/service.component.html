@@ -1,0 +1,8 @@
+<div class="container">
+    <app-add-item (addNewUser)="updateListItem($event)">
+    </app-add-item>
+</div>
+<hr>
+<div class="container">
+    <app-list-item [newItems]="addedItems"></app-list-item>
+</div>

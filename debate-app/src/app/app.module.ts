@@ -22,6 +22,9 @@ import { EvenComponent } from './assignment5/even/even.component';
 import { BasicHighlightDirective } from './basic-highlight/basic-highlight-directive';
 import { BetterHighlightDirective } from './better-directive/better-highlight.directive';
 import { UnlessDirective } from './unless-directive/unless.directive';
+import { AddItemComponent } from './services-assignment/add-item/add-item.component';
+import { ListItemComponent } from './services-assignment/list-item/list-item.component';
+import { ServiceComponent } from './services-assignment/service.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +44,10 @@ import { UnlessDirective } from './unless-directive/unless.directive';
     EvenComponent,
     BasicHighlightDirective,
     BetterHighlightDirective,
-    UnlessDirective
+    UnlessDirective,
+    AddItemComponent,
+    ListItemComponent,
+    ServiceComponent
   ],
   imports: [
     BrowserModule,
