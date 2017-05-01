@@ -15,6 +15,13 @@ import { SimpleIfComponent } from './simple-if/simple-if.component';
 import { SimpleStyleComponent } from './simple-style/simple-style.component';
 import { SimpleNgFor } from './assignment3/simpleNgFor.component';
 import { Assignment4Component } from './assignment4/assignment4.component';
+import { Assignment5Component } from './assignment5/assignment5.component';
+import { GameControlComponent } from './assignment5/game-control/game-control.component';
+import { OddComponent } from './assignment5/odd/odd.component';
+import { EvenComponent } from './assignment5/even/even.component';
+import { BasicHighlightDirective } from './basic-highlight/basic-highlight-directive';
+import { BetterHighlightDirective } from './better-directive/better-highlight.directive';
+import { UnlessDirective } from './unless-directive/unless.directive';
 
 @NgModule({
   declarations: [
@@ -27,7 +34,14 @@ import { Assignment4Component } from './assignment4/assignment4.component';
     SimpleIfComponent,
     SimpleStyleComponent,
     SimpleNgFor,
-    Assignment4Component
+    Assignment4Component,
+    Assignment5Component,
+    GameControlComponent,
+    OddComponent,
+    EvenComponent,
+    BasicHighlightDirective,
+    BetterHighlightDirective,
+    UnlessDirective
   ],
   imports: [
     BrowserModule,

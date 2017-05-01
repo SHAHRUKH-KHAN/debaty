@@ -1,7 +1,7 @@
 <div>
   <button class="btn btn-primary" (click)="toggleDisplay()">Display Results</button>
   <div class="row">
-    <div class="col-lg-3" *ngIf="displayText">
+    <div class="col-lg-3" *appUnless="!displayText">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
       sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
       Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
@@ -12,7 +12,9 @@
     </div>
     <div class="col-lg-3">
       <ul>
-        <li *ngFor="let item of logs; index as i" [ngStyle]="{ backgroundColor:getBColor(i) }" [ngClass]="{textColor: logs.length >= 5 && i >= 4}" >
+        <li *ngFor="let item of logs; index as i" 
+        [ngStyle]="{ backgroundColor:getBColor(i) }" 
+        [ngClass]="{textColor: logs.length >= 5 && i >= 4}" >
           {{item}}
         </li>
       </ul>

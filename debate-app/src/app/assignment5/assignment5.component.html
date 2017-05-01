@@ -1,0 +1,28 @@
+<app-game-control 
+  (gameStarted)="updateView($event)">
+</app-game-control>
+<hr>
+<div class="container container-fluid">
+  <div class="text-center text-danger">
+    {{timer}}
+  </div>
+  <div class="col-xs-12" *ngIf="timer">
+    <div 
+      class="col-xs-5" 
+      style="background-color:bisque;">
+      <app-odd 
+        *ngFor="let count of oddCounter">
+        <p class="text-color-odd">I am ODD({{count}})</p>
+      </app-odd>
+    </div>
+    <div
+      class="col-xs-5 pull-right" 
+      style="background-color:black;"
+      *ngIf="evenCounter.length > 0">
+      <app-even *ngFor="let count of evenCounter">
+        <p class="text-color-even">I am EVEN({{count}})</p>
+      </app-even>
+    </div>
+  </div>
+
+</div>
