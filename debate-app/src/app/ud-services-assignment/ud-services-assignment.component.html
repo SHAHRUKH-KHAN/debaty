@@ -1,0 +1,8 @@
+<app-active-users
+    [users]='activeUsers'
+    (userSetToInactive)='addToInActive($event)'>
+</app-active-users>
+<app-inactive-users
+    [users]='inactiveUsers'
+    (userSetToActive)='addToActive($event)'>
+</app-inactive-users>

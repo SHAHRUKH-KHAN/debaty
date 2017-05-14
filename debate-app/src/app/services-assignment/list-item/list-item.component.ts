@@ -9,7 +9,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class ListItemComponent implements OnInit {
 
-  @Input() newItems = [];
+  @Input() newItems:{name:string, email:string}[] = [];
   constructor(private loggingService: LoggingService) { }
 
   ngOnInit() {

@@ -25,6 +25,9 @@ import { UnlessDirective } from './unless-directive/unless.directive';
 import { AddItemComponent } from './services-assignment/add-item/add-item.component';
 import { ListItemComponent } from './services-assignment/list-item/list-item.component';
 import { ServiceComponent } from './services-assignment/service.component';
+import { ActiveUsersComponent } from './ud-services-assignment/active-users/active-users.component';
+import { InactiveUsersComponent } from './ud-services-assignment/inactive-users/inactive-users.component';
+import { UdServicesAssignmentComponent } from './ud-services-assignment/ud-services-assignment.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +50,10 @@ import { ServiceComponent } from './services-assignment/service.component';
     UnlessDirective,
     AddItemComponent,
     ListItemComponent,
-    ServiceComponent
+    ServiceComponent,
+    ActiveUsersComponent,
+    InactiveUsersComponent,
+    UdServicesAssignmentComponent
   ],
   imports: [
     BrowserModule,
