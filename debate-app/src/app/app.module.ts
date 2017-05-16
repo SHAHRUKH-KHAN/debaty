@@ -28,6 +28,7 @@ import { ServiceComponent } from './services-assignment/service.component';
 import { ActiveUsersComponent } from './ud-services-assignment/active-users/active-users.component';
 import { InactiveUsersComponent } from './ud-services-assignment/inactive-users/inactive-users.component';
 import { UdServicesAssignmentComponent } from './ud-services-assignment/ud-services-assignment.component';
+import { UsersService } from './ud-services-assignment/services/users.service';
 
 @NgModule({
   declarations: [
@@ -61,7 +62,7 @@ import { UdServicesAssignmentComponent } from './ud-services-assignment/ud-servi
     HttpModule,
     AlertModule.forRoot()
   ],
-  providers: [],
+  providers: [UsersService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

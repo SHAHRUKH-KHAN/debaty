@@ -1,3 +1,5 @@
+import { UsersService } from '../ud-services-assignment/services/users.service';
+
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,10 +9,11 @@ import { Component } from '@angular/core';
 
 export class UdServicesAssignmentComponent {
 
-    activeUsers: [string]=['shahrukh', 'rekha'];
-    inactiveUsers: [string]=['hitasha', 'akansha'];
+    constructor(private usersService: UsersService){
+    }
 
-    constructor(){}
+    activeUsers: [string] = this.usersService.activeUsers;
+    inactiveUsers: [string] = this.usersService.inactiveUsers;
 
     addToInActive(id:number){
         this.inactiveUsers.push(this.activeUsers[id]);
