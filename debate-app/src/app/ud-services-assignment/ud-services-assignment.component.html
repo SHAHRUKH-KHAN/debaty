@@ -1,6 +1,6 @@
 <app-active-users
     [users]='activeUsers'
-    (userSetToInactive)='addToInActive($event)'>
+    (changeStatus)='addToInActive($event)'>
 </app-active-users>
 <app-inactive-users
     [users]='inactiveUsers'

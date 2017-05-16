@@ -1,4 +1,4 @@
-import { UsersService } from '../ud-services-assignment/services/users.service';
+import { UsersService } from './services/users.service';
 
 import { Component } from '@angular/core';
 
@@ -10,6 +10,12 @@ import { Component } from '@angular/core';
 export class UdServicesAssignmentComponent {
 
     constructor(private usersService: UsersService){
+        this.usersService.changeStatusToInactive.subscribe(
+            (id: number) => this.addToInActive(id)
+        );
+        this.usersService.changeStatusToActive.subscribe(
+            (id: number) => this.addToActive(id)
+        );
     }
 
     activeUsers: [string] = this.usersService.activeUsers;
