@@ -1,33 +1,24 @@
-import { UsersService } from './services/users.service';
+import { Component, OnInit } from '@angular/core';
 
-import { Component } from '@angular/core';
+import { UsersService } from './services/users.service';
+import { CounterService } from './services/counter.service';
 
 @Component({
    selector: 'app-ud-services-component',
    templateUrl:'./ud-services-assignment.component.html'
 })
 
-export class UdServicesAssignmentComponent {
+export class UdServicesAssignmentComponent implements OnInit{
 
-    constructor(private usersService: UsersService){
-        this.usersService.changeStatusToInactive.subscribe(
-            (id: number) => this.addToInActive(id)
-        );
-        this.usersService.changeStatusToActive.subscribe(
-            (id: number) => this.addToActive(id)
-        );
+    activeToInactive: number;
+    inActiveToActive: number;
+
+    constructor(private usersService: UsersService, 
+        private counterService: CounterService){
     }
 
-    activeUsers: [string] = this.usersService.activeUsers;
-    inactiveUsers: [string] = this.usersService.inactiveUsers;
-
-    addToInActive(id:number){
-        this.inactiveUsers.push(this.activeUsers[id]);
-        this.activeUsers.splice(id, 1);
-    }
-
-    addToActive(id:number){
-        this.activeUsers.push(this.inactiveUsers[id]);
-        this.inactiveUsers.splice(id, 1);
+    ngOnInit() {
+        this.activeToInactive = this.counterService.activeToInActiveCounter;
+        this.inActiveToActive = this.counterService.inActiveToActiveCounter;
     }
 }

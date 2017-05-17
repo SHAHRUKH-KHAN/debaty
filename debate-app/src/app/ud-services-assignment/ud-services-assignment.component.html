@@ -1,8 +1,5 @@
-<app-active-users
-    [users]='activeUsers'
-    (changeStatus)='addToInActive($event)'>
-</app-active-users>
-<app-inactive-users
-    [users]='inactiveUsers'
-    (userSetToActive)='addToActive($event)'>
-</app-inactive-users>
+<app-active-users></app-active-users>
+<app-inactive-users></app-inactive-users>
+<hr>
+<h2>activeToInactive : {{activeToInactive}}</h2>
+<h2>inActiveToActive: {{inActiveToActive}}</h2>

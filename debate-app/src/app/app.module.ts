@@ -29,6 +29,7 @@ import { ActiveUsersComponent } from './ud-services-assignment/active-users/acti
 import { InactiveUsersComponent } from './ud-services-assignment/inactive-users/inactive-users.component';
 import { UdServicesAssignmentComponent } from './ud-services-assignment/ud-services-assignment.component';
 import { UsersService } from './ud-services-assignment/services/users.service';
+import { CounterService } from './ud-services-assignment/services/counter.service';
 
 @NgModule({
   declarations: [
@@ -62,7 +63,7 @@ import { UsersService } from './ud-services-assignment/services/users.service';
     HttpModule,
     AlertModule.forRoot()
   ],
-  providers: [UsersService],
+  providers: [UsersService, CounterService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
