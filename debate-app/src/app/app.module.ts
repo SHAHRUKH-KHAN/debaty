@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { Route, RouterModule } from '@angular/router';
 
 import { AlertModule } from 'ngx-bootstrap';
 
@@ -30,7 +31,14 @@ import { InactiveUsersComponent } from './ud-services-assignment/inactive-users/
 import { UdServicesAssignmentComponent } from './ud-services-assignment/ud-services-assignment.component';
 import { UsersService } from './ud-services-assignment/services/users.service';
 import { CounterService } from './ud-services-assignment/services/counter.service';
+import { RouterComponent } from './router/router.component';
+import { UsersComponent } from './router/users/users.component';
+import { HomeComponent } from './router/home/home.component';
 
+const routes: Route[] = [
+  {path: '', component: HomeComponent},
+  {path: 'users', component: UsersComponent}
+];
 @NgModule({
   declarations: [
     AppComponent,
@@ -55,13 +63,17 @@ import { CounterService } from './ud-services-assignment/services/counter.servic
     ServiceComponent,
     ActiveUsersComponent,
     InactiveUsersComponent,
-    UdServicesAssignmentComponent
+    UdServicesAssignmentComponent,
+    UsersComponent,
+    HomeComponent,
+    RouterComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    AlertModule.forRoot()
+    AlertModule.forRoot(),
+    RouterModule.forRoot(routes)
   ],
   providers: [UsersService, CounterService],
   bootstrap: [AppComponent]

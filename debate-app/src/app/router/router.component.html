@@ -1,0 +1,15 @@
+<div class="row">
+    <nav class="navbar">
+        <ul class="nav nav-tabs">
+            <li class="active" 
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{exact: true}">
+                <a routerLink="/">home</a>
+            </li>
+            <li routerLinkActive="active">
+                <a routerLink="/users">users</a>
+            </li>
+        </ul>
+    </nav>
+    <router-outlet></router-outlet>
+</div>
